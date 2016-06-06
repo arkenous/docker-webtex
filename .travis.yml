@@ -1,0 +1,10 @@
+language: python
+sudo: required
+services:
+  - docker
+
+env:
+  - TARGET_CONTAINER_ID=container-docker-webtex
+
+script:
+  - docker build -t docker-webtex latest/
