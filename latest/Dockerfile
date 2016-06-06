@@ -23,7 +23,7 @@ RUN curl --silent -L -o /tmp/ace.tar.gz https://github.com/ajaxorg/ace-builds/ar
   mv /tmp/ace-builds/src-noconflict /home/user/WebTeX/WebTeX/static/ace-builds/ && \
   rm -rf /tmp/ace-builds
 
-RUN curl --silent -L -o /tmp/redpen.tar.gz https://github.com/redpen-cc/redpen/releases/download/redpen-1.4.3/redpen-1.4.3.tar.gz && \
+RUN curl --silent -L -o /tmp/redpen.tar.gz https://github.com/redpen-cc/redpen/releases/download/redpen-1.6.0/redpen-1.6.0.tar.gz && \
   mkdir /home/user/redpen && \
   tar -xvf /tmp/redpen.tar.gz -C /home/user/redpen --strip-components 1 > /dev/null && \
   rm -f /tmp/redpen.tar.gz
