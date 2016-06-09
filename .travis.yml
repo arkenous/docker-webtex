@@ -15,7 +15,7 @@ env:
   - TARGET_CONTAINER_ID=container-docker-webtex
 
 install:
-  - "pip install selenium"
+  - "pip install selenium Werkzeug"
 
 before_script:
   - docker build -t docker-webtex latest/
