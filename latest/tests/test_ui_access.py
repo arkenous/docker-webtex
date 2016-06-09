@@ -11,8 +11,7 @@ from werkzeug.security import generate_password_hash as gen_pass_hash
 
 
 def test_login_logout():
-    #driver = webdriver.PhantomJS()
-    driver = webdriver.PhantomJS("/usr/local/bin/PhantomJS")
+    driver = webdriver.PhantomJS()
     wait = WebDriverWait(driver, 5)
 
     driver.get('http://localhost:8080/')
