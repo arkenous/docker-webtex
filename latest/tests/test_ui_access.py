@@ -7,8 +7,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from nose.tools import eq_
 import os
-from configparser import ConfigParser
-import sqlite3
 from werkzeug.security import generate_password_hash as gen_pass_hash
 
 
