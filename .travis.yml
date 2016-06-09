@@ -1,10 +1,25 @@
 language: python
+
 sudo: required
+
+dist: trusty
+
+python:
+  - "3.5"
+  - "3.4"
+
 services:
   - docker
 
 env:
   - TARGET_CONTAINER_ID=container-docker-webtex
 
-script:
+install:
+  - "pip install selenium"
+
+before_script:
   - docker build -t docker-webtex latest/
+  - docker run -itd -p 8080:8080 --name $TARGET_CONTAINER_ID docker-webtex /bin/bash -c "python /home/user/WebTeX/WebTeX/app.py"
+
+script:
+  - nosetests latest
