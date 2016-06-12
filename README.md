@@ -7,6 +7,8 @@
 
 Web-based LaTeX editor and compiler in an Arch Linux docker container.
 
+WebTeX build status: [![Build Status](https://travis-ci.org/trileg/WebTeX.svg?branch=master)](https://travis-ci.org/trileg/WebTeX)
+
 ## How to use this?
 #### Pull docker image from Docker Hub
 ```
