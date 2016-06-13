@@ -29,9 +29,9 @@ RUN curl --silent -L -o /tmp/redpen.tar.gz https://github.com/redpen-cc/redpen/r
   rm -f /tmp/redpen.tar.gz
 ENV PATH $PATH:/home/user/redpen/bin
 
-ADD scripts/run.sh .
+ADD scripts/run.sh /home/user/WebTeX/
 USER root
-RUN chmod +x run.sh
+RUN chmod +x /home/user/WebTeX/run.sh
 USER user
-CMD ./run.sh &> /dev/null
-RUN rm -f run.sh
+CMD /home/user/WebTeX/run.sh &> /dev/null
+RUN rm -f /home/user/WebTeX/run.sh
