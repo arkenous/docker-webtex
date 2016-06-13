@@ -28,3 +28,10 @@ RUN curl --silent -L -o /tmp/redpen.tar.gz https://github.com/redpen-cc/redpen/r
   tar -xvf /tmp/redpen.tar.gz -C /home/user/redpen --strip-components 1 > /dev/null && \
   rm -f /tmp/redpen.tar.gz
 ENV PATH $PATH:/home/user/redpen/bin
+
+ADD scripts/run.sh .
+USER root
+RUN chmod +x run.sh
+USER user
+CMD ./run.sh &> /dev/null
+RUN rm -f run.sh
