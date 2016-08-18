@@ -1,5 +1,7 @@
 # docker-webtex
 [![Build Status](https://travis-ci.org/trileg/docker-webtex.svg?branch=master)](https://travis-ci.org/trileg/docker-webtex)
+[![](https://images.microbadger.com/badges/image/trileg/docker-webtex.svg)](http://microbadger.com/images/trileg/docker-webtex "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/trileg/docker-webtex.svg)](http://microbadger.com/images/trileg/docker-webtex "Get your own version badge on microbadger.com")
 [![Docker Stars](https://img.shields.io/docker/stars/trileg/docker-webtex.svg?maxAge=3600)](https://hub.docker.com/r/trileg/docker-webtex/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/trileg/docker-webtex.svg?maxAge=3600)](https://hub.docker.com/r/trileg/docker-webtex/)
 [![AMA](https://img.shields.io/badge/ask%20me-anything-0e7fc0.svg)](https://github.com/trileg/ama)
