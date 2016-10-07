@@ -4,7 +4,7 @@ MAINTAINER Kensuke Kosaka <kosaka@trileg.net>
 
 RUN pacman -Syu --noconfirm fakeroot python texlive-langcjk poppler git &> /dev/null
 USER user
-RUN yaourt -Syua --noconfirm jdk &> /dev/null
+RUN pacaur -Syu --noconfirm --noedit jdk &> /dev/null
 
 WORKDIR /home/user/
 RUN curl -L -O --silent https://bootstrap.pypa.io/get-pip.py && \
