@@ -2,7 +2,7 @@
 FROM trileg/arch-base:latest
 MAINTAINER Kensuke Kosaka <k@trileg.net>
 
-RUN pacman -Syu --noconfirm jre8-openjdk python texlive-langcjk poppler &> /dev/null
+RUN pacman -Syu --noconfirm jre8-openjdk-headless python texlive-langcjk poppler &> /dev/null
 
 USER user
 WORKDIR /home/user/
