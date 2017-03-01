@@ -1,11 +1,10 @@
 ## -*- docker-image-name: "trileg/docker-webtex" -*-
 FROM trileg/arch-base:latest
-MAINTAINER Kensuke Kosaka <kosaka@trileg.net>
+MAINTAINER Kensuke Kosaka <k@trileg.net>
 
-RUN pacman -Syu --noconfirm fakeroot python texlive-langcjk poppler git &> /dev/null
+RUN pacman -Syu --noconfirm jre8-openjdk python texlive-langcjk poppler &> /dev/null
+
 USER user
-RUN pacaur -Syu --noconfirm --noedit jdk &> /dev/null
-
 WORKDIR /home/user/
 RUN curl -L -O --silent https://bootstrap.pypa.io/get-pip.py && \
   python get-pip.py --user > /dev/null && \
@@ -30,8 +29,6 @@ RUN curl --silent -L -o /tmp/redpen.tar.gz https://github.com/redpen-cc/redpen/r
 ENV PATH $PATH:/home/user/redpen/bin
 
 ADD scripts/run.sh /home/user/WebTeX/
-USER root
-RUN chmod +x /home/user/WebTeX/run.sh
-USER user
+RUN sudo chmod +x /home/user/WebTeX/run.sh
 CMD /home/user/WebTeX/run.sh &> /dev/null
 RUN rm -f /home/user/WebTeX/run.sh
