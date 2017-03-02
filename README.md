@@ -32,7 +32,7 @@ http://localhost:8080/
 Follow initial setup instruction. Input berow text for each input form.
 - User name: Your preferred user name
 - User password: Your preferred user password
-- JAVA_HOME: `/usr/lib/jvm/java-8-openjdk`
+- JAVA_HOME: `/usr/lib/jvm/java-8-openjdk/jre`
 - Absolute path of RedPen configuration file: `/home/user/redpen/conf/redpen-conf-en.xml`
 
 #### Re-login to WebTeX, create working directory, write LaTeX document, and compile
