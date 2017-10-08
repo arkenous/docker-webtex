@@ -1,6 +1,6 @@
-## -*- docker-image-name: "trileg/docker-webtex" -*-
-FROM trileg/arch-base:latest
-MAINTAINER Kensuke Kosaka <k@trileg.net>
+## -*- docker-image-name: "k3nsuk3/docker-webtex" -*-
+FROM k3nsuk3/arch-base:latest
+MAINTAINER Kensuke Kousaka <k@k3n.link>
 
 RUN pacman -Syu --noconfirm jre8-openjdk-headless python texlive-langcjk texlive-fontsextra poppler &> /dev/null
 
@@ -10,7 +10,7 @@ RUN curl -L -O --silent https://bootstrap.pypa.io/get-pip.py && \
   python get-pip.py --user > /dev/null && \
   rm -f get-pip.py
 ENV PATH $PATH:/home/user/.local/bin
-RUN git clone https://github.com/trileg/WebTeX.git &> /dev/null
+RUN git clone https://github.com/k3nsuk3/WebTeX.git &> /dev/null
 WORKDIR /home/user/WebTeX/
 RUN pip install --user -r pip-requirements.txt > /dev/null
 
