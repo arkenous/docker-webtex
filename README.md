@@ -1,22 +1,22 @@
 # docker-webtex
-[![Build Status](https://travis-ci.org/trileg/docker-webtex.svg?branch=master)](https://travis-ci.org/trileg/docker-webtex)
-[![](https://images.microbadger.com/badges/image/trileg/docker-webtex.svg)](http://microbadger.com/images/trileg/docker-webtex "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/trileg/docker-webtex.svg)](http://microbadger.com/images/trileg/docker-webtex "Get your own version badge on microbadger.com")
-[![AMA](https://img.shields.io/badge/ask%20me-anything-0e7fc0.svg)](https://github.com/trileg/ama)
+[![Build Status](https://travis-ci.org/k3nsuk3/docker-webtex.svg?branch=master)](https://travis-ci.org/k3nsuk3/docker-webtex)
+[![](https://images.microbadger.com/badges/image/k3nsuk3/docker-webtex.svg)](http://microbadger.com/images/k3nsuk3/docker-webtex "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/k3nsuk3/docker-webtex.svg)](http://microbadger.com/images/k3nsuk3/docker-webtex "Get your own version badge on microbadger.com")
+[![AMA](https://img.shields.io/badge/ask%20me-anything-0e7fc0.svg)](https://github.com/k3nsuk3/ama)
 
 Web-based LaTeX editor and compiler in an Arch Linux docker container.
 
-WebTeX build status: [![Build Status](https://travis-ci.org/trileg/WebTeX.svg?branch=master)](https://travis-ci.org/trileg/WebTeX)
+WebTeX build status: [![Build Status](https://travis-ci.org/k3nsuk3/WebTeX.svg?branch=master)](https://travis-ci.org/k3nsuk3/WebTeX)
 
 ## How to use this?
 #### Pull docker image from Docker Hub
 ```
-$ docker pull trileg/docker-webtex:latest
+$ docker pull k3nsuk3/docker-webtex:latest
 ```
 
 #### Run container from this pulled image
 ```
-$ docker run -itd -p 8080:8080 trileg/docker-webtex:latest /bin/bash -c "python /home/user/WebTeX/WebTeX/app.py"
+$ docker run -itd -p 8080:8080 k3nsuk3/docker-webtex:latest /bin/bash -c "python /home/user/WebTeX/WebTeX/app.py"
 ```
 
 #### Access WebTeX by your preferred browser
